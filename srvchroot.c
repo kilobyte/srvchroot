@@ -9,7 +9,7 @@
 
 extern char **environ;
 
-#define PN "pchroot"
+#define PN "srvchroot"
 #define PN_ PN": "
 
 static void die(const char *txt, ...) __attribute__((format (printf, 1, 2)));

@@ -1,4 +1,4 @@
-all:	pc
+all:	srvchroot
 
-pc:	pc.c
-	gcc -Wall -std=c11 -o pc $^
+srvchroot:	srvchroot.c
+	gcc -Wall -std=c11 -o srvchroot $^
