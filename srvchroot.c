@@ -52,6 +52,9 @@ int main(int argc, char*const*argv)
             fprintf(stderr, PN_"couldn't chdir to %s, going to $HOME.\n", path);
     }
 
+    if (!strcmp(argv[1], "powerpcspe"))
+        setenv("QEMU_CPU", "e500v2", 1);
+
     setenv("SCHROOT_CHROOT_NAME", argv[1], 1);
 
     if (argv[2])
